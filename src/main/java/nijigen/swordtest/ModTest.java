@@ -18,6 +18,6 @@ public class ModTest implements ModInitializer {
 		// test
 		ModItems.registerModItems();
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Deez Nutz");
 	}
 }
