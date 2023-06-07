@@ -16,6 +16,6 @@ public class ModTest implements ModInitializer {
 		// Proceed with mild caution.
 		// test
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Deez Nutz");
 	}
 }
