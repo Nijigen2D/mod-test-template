@@ -2,6 +2,7 @@ package nijigen.swordtest;
 
 import net.fabricmc.api.ModInitializer;
 
+import nijigen.swordtest.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +16,7 @@ public class ModTest implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		// test
+		ModItems.registerModItems();
 
 		LOGGER.info("Hello Fabric world!");
 	}
