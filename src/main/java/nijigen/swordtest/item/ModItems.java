@@ -18,7 +18,9 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(ModTest.MOD_ID, name), item);
     }
     public static void addItemsToItemGroups() {
+
         addToItemGroup(ModItemGroup.CUM, RAW_CUM);
+        addToItemGroup(ModItemGroup.CUM, CUM);
     }
     public static void addToItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));

@@ -1,4 +1,6 @@
 {
   "item.modtest.raw_cum": "Raw Cum",
-  "item.modtest.cum": "Cum"
+  "item.modtest.cum": "Cum",
+
+  "itemGroup.modtest.cum":  "Cum Tab"
 }
