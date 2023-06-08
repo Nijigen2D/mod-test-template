@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "modtest:block/raw_cum_block",
+    "top": "modtest:block/raw_cum_block",
+    "side": "modtest:block/raw_cum_block"
+  }
+}

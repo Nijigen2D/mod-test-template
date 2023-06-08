@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "modtest:block/raw_cum_slab"
+    },
+    "type=double": {
+      "model": "modtest:block/raw_cum_block"
+    },
+    "type=top": {
+      "model": "modtest:block/raw_cum_slab_top"
+    }
+  }
+}
