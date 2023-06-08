@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "modtest:block/raw_cum_door_bottom",
+    "top": "modtest:block/raw_cum_door_top"
+  }
+}

@@ -2,6 +2,8 @@ package nijigen.swordtest;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.client.render.RenderLayer;
 import nijigen.swordtest.block.ModBlocks;
 import nijigen.swordtest.item.ModItemGroup;
 import nijigen.swordtest.item.ModItems;
@@ -20,6 +22,9 @@ public class ModTest implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModMessages.registerC2SPackets();
+
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RAW_CUM_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RAW_CUM_TRAPDOOR, RenderLayer.getCutout());
 
 		LOGGER.info("Deez Nutz");
 	}
