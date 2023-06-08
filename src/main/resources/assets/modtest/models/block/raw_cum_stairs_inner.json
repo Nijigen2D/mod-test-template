@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/stairs_inner",
+  "parent": "minecraft:block/inner_stairs",
   "textures": {
     "bottom": "modtest:block/raw_cum_block",
     "top": "modtest:block/raw_cum_block",
