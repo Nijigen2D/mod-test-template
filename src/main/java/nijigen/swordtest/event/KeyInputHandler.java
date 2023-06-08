@@ -28,7 +28,7 @@ public class KeyInputHandler {
         cumKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 KEY_CUM,
                 InputUtil.Type.KEYSYM,
-                GLFW.GLFW_KEY_C,
+                GLFW.GLFW_KEY_X,
                 KEY_CATEGORY_CUM
         ));
         registerKeyInputs();
