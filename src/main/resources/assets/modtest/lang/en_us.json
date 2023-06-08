@@ -5,5 +5,8 @@
 
   "block.modtest.raw_cum_block": "Raw Cum Block",
 
-  "itemGroup.modtest.cum":  "Cum Tab"
+  "itemGroup.modtest.cum":  "Cum Tab",
+
+  "key.category.modtest.cum": "Cum Mod",
+  "key.modtest.cum": "Cum"
 }

@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import nijigen.swordtest.block.ModBlocks;
 import nijigen.swordtest.item.ModItemGroup;
 import nijigen.swordtest.item.ModItems;
+import nijigen.swordtest.networking.ModMessages;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,6 +18,8 @@ public class ModTest implements ModInitializer {
 		ModItemGroup.registerItemGroup();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModMessages.registerC2SPackets();
 
 		LOGGER.info("Deez Nutz");
 	}
