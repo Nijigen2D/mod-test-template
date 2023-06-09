@@ -6,5 +6,5 @@
   "ingredient": {
     "item": "modtest:raw_cum"
   },
-  "result": "modtest:cum"
+  "result": "modtest:cooked_cum"
 }

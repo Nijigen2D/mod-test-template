@@ -12,6 +12,6 @@ public class ModItemGroup {
     public static void registerItemGroup() {
         CUM = FabricItemGroup.builder(new Identifier(ModTest.MOD_ID, "cum"))
                 .displayName(Text.literal("Cum Item Group"))
-                .icon(() -> new ItemStack(ModItems.CUM)).build();
+                .icon(() -> new ItemStack(ModItems.RAW_CUM)).build();
     }
 }
