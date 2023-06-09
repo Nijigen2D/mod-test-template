@@ -3,8 +3,10 @@ package nijigen.swordtest;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.client.render.RenderLayer;
 import nijigen.swordtest.block.ModBlocks;
+import nijigen.swordtest.event.PlayerTickHandler;
 import nijigen.swordtest.item.ModItemGroup;
 import nijigen.swordtest.item.ModItems;
 import nijigen.swordtest.networking.ModMessages;
@@ -27,6 +29,8 @@ public class ModTest implements ModInitializer {
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RAW_CUM_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RAW_CUM_TRAPDOOR, RenderLayer.getCutout());
+
+		ServerTickEvents.START_SERVER_TICK.register(new PlayerTickHandler());
 
 		LOGGER.info("Deez Nutz");
 	}
