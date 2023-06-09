@@ -20,15 +20,19 @@ public class CumC2SPacket {
     private static final String MESSAGE_NO_COOM = "message.modtest.coomednot";
     public static void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler, PacketByteBuf buf, PacketSender responseSender) {
         ServerWorld world = player.getWorld();
-        if(((IEntityDataSaver) player).getPersistentData().getInt("cum") > 0) {
+        if(((IEntityDataSaver) player).getPersistentData().getInt("cum") > 4) {
             //Play coom sound
             world.playSound(null, player.getBlockPos(), ModSounds.COOM_SOUND, SoundCategory.PLAYERS, 1f, 1f);
             //Notify player
             player.sendMessage(Text.translatable(MESSAGE_COOMING)
                     .fillStyle(Style.EMPTY.withColor(Formatting.DARK_GRAY)), false);
             //Remove cum
-            CumData.removeCum(((IEntityDataSaver) player),1);
+            CumData.removeCum(((IEntityDataSaver) player),5);
             //Give raw cum
+            player.giveItemStack(ModItems.RAW_CUM.getDefaultStack());
+            player.giveItemStack(ModItems.RAW_CUM.getDefaultStack());
+            player.giveItemStack(ModItems.RAW_CUM.getDefaultStack());
+            player.giveItemStack(ModItems.RAW_CUM.getDefaultStack());
             player.giveItemStack(ModItems.RAW_CUM.getDefaultStack());
             //Cum levels
             //player.sendMessage(Text.literal("Cum: " + ((IEntityDataSaver) player).getPersistentData().getInt("cum"))
