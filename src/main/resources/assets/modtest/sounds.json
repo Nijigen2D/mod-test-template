@@ -1,0 +1,8 @@
+{
+  "coom_sound": {
+    "subtitle": "sounds.modtest.coom_sound",
+    "sounds": [
+      "modtest:coom_sound"
+    ]
+  }
+}

@@ -24,7 +24,7 @@ public class ModBlocks {
     public static final Block RAW_CUM_DOOR = registerBlock("raw_cum_door",
             new DoorBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(1.0f).nonOpaque(),
                     SoundEvents.BLOCK_WOODEN_DOOR_CLOSE, SoundEvents.BLOCK_WOODEN_DOOR_OPEN), ModItemGroup.CUM);
-    public static final Block RAW_CUM_TRAPDOOR = registerBlock("raw_cum_door",
+    public static final Block RAW_CUM_TRAPDOOR = registerBlock("raw_cum_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(1.0f).nonOpaque(),
                     SoundEvents.BLOCK_WOODEN_TRAPDOOR_CLOSE, SoundEvents.BLOCK_WOODEN_TRAPDOOR_OPEN), ModItemGroup.CUM);
     private static Block registerBlock(String name, Block block, ItemGroup group) {

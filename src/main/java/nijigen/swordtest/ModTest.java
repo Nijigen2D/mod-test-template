@@ -8,6 +8,7 @@ import nijigen.swordtest.block.ModBlocks;
 import nijigen.swordtest.item.ModItemGroup;
 import nijigen.swordtest.item.ModItems;
 import nijigen.swordtest.networking.ModMessages;
+import nijigen.swordtest.sound.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,6 +21,7 @@ public class ModTest implements ModInitializer {
 		ModItemGroup.registerItemGroup();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModSounds.registerModSounds();
 
 		ModMessages.registerC2SPackets();
 

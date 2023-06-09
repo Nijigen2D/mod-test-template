@@ -6,6 +6,8 @@
   "block.modtest.raw_cum_block": "Raw Cum Block",
   "block.modtest.raw_cum_slab": "Raw Cum Slab",
   "block.modtest.raw_cum_stairs": "Raw Cum Stairs",
+  "block.modtest.raw_cum_door": "Raw Cum Door",
+  "block.modtest.raw_cum_trapdoor": "Raw Cum Trapdoor",
 
   "itemGroup.modtest.cum":  "Cum",
 

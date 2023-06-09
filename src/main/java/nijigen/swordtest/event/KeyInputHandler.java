@@ -9,21 +9,24 @@ import net.minecraft.client.util.InputUtil;
 import nijigen.swordtest.networking.ModMessages;
 import org.lwjgl.glfw.GLFW;
 
-import java.util.Timer;
-
 public class KeyInputHandler {
     public static final String KEY_CATEGORY_CUM = "key.category.modtest.cum";
     public static final String KEY_CUM = "key.modtest.cum";
-
     public static KeyBinding cumKey;
+    private static int yes;
 
     public static void registerKeyInputs() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if(cumKey.wasPressed()){
+            if(cumKey.isPressed() && yes == 1) {
+                yes = 0;
                 ClientPlayNetworking.send(ModMessages.CUMMING_ID, PacketByteBufs.create());
+            }
+            if(!cumKey.isPressed()) {
+                yes = 1;
             }
         });
     }
+
     public static void register() {
         cumKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 KEY_CUM,
