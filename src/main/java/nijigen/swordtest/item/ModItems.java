@@ -26,7 +26,7 @@ public class ModItems {
                             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 2400, 3), 1.0F)
                             .alwaysEdible().build())));
     public static final Item CUMSWORD = registerItem("cumsword",
-            new SwordItem(ModToolMaterial.CUMMATERIAL, 100000, 20.0f, new FabricItemSettings().maxCount(1)));
+            new SwordItem(ModToolMaterial.CUMMATERIAL, 19, -2.4f, new FabricItemSettings().maxCount(64)));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ModTest.MOD_ID, name), item);
     }

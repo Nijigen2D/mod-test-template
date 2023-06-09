@@ -2,7 +2,7 @@
   "type": "minecraft:campfire_cooking",
   "category": "food",
   "cookingtime": 600,
-  "experience": 200,
+  "experience": 0.5,
   "ingredient": {
     "item": "modtest:raw_cum"
   },

@@ -2,11 +2,12 @@ package nijigen.swordtest.item;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import nijigen.swordtest.block.ModBlocks;
 
 public class ModToolMaterial implements ToolMaterial {
     @Override
     public int getDurability() {
-        return 10000;
+        return 1;
     }
     @Override
     public float getMiningSpeedMultiplier() {
@@ -14,7 +15,7 @@ public class ModToolMaterial implements ToolMaterial {
     }
     @Override
     public float getAttackDamage() {
-        return 3.0F;
+        return 0.0F;
     }
     @Override
     public int getMiningLevel() {
@@ -22,11 +23,11 @@ public class ModToolMaterial implements ToolMaterial {
     }
     @Override
     public int getEnchantability() {
-        return 15;
+        return 30;
     }
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.RAW_CUM);
+        return Ingredient.ofItems(ModBlocks.RAW_CUM_BLOCK);
     }
     public static final ModToolMaterial CUMMATERIAL = new ModToolMaterial();
 }
