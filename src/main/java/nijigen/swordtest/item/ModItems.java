@@ -30,19 +30,9 @@ public class ModItems {
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ModTest.MOD_ID, name), item);
     }
-    public static void addItemsToItemGroups() {
 
-        addToItemGroup(ModItemGroup.CUM, RAW_CUM);
-        addToItemGroup(ModItemGroup.CUM, COOKED_CUM);
-        addToItemGroup(ModItemGroup.CUM, CUMSWORD);
-        addToItemGroup(ModItemGroup.CUM, GOD_CUM);
-    }
-    public static void addToItemGroup(ItemGroup group, Item item) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-    }
     public static void registerModItems() {
         ModTest.LOGGER.debug("Registering Mod Items for " + ModTest.MOD_ID);
 
-        addItemsToItemGroups();
     }
 }

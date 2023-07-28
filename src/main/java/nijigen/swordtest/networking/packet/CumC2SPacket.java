@@ -19,7 +19,7 @@ public class CumC2SPacket {
     private static final String MESSAGE_COOMING = "message.modtest.coomed";
     private static final String MESSAGE_NO_COOM = "message.modtest.coomednot";
     public static void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler, PacketByteBuf buf, PacketSender responseSender) {
-        ServerWorld world = player.getWorld();
+        ServerWorld world = player.getServerWorld();
         if(((IEntityDataSaver) player).getPersistentData().getInt("cum") > 4) {
             //Play coom sound
             world.playSound(null, player.getBlockPos(), ModSounds.COOM_SOUND, SoundCategory.PLAYERS, 1f, 1f);
