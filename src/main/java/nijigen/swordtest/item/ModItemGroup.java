@@ -12,7 +12,7 @@ import nijigen.swordtest.ModTest;
 import nijigen.swordtest.block.ModBlocks;
 
 public class ModItemGroup {
-    public static ItemGroup CUM = Registry.register(Registries.ITEM_GROUP, new Identifier(ModTest.MOD_ID, "xum"),
+    public static ItemGroup CUM = Registry.register(Registries.ITEM_GROUP, new Identifier(ModTest.MOD_ID, "cum"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cum"))
                     .icon(() -> new ItemStack(ModItems.RAW_CUM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_CUM);
